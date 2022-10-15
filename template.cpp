@@ -32,8 +32,11 @@ typedef vector<bool> vb;
 #define all(v) v.begin(),v.end()
 #define fastio	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define fio	freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); freopen ("error.txt", "w", stderr);
-#define debug(x) cerr << #x << " : "; _print(x); cerr << endl;
-
+template<typename... T>
+#define error(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+void err(istream_iterator<string> it) {}
+template<typename T, typename... Args>
+void err(istream_iterator<string> it, T a, Args... args) {cerr << *it << "=" << a << ", "; err(++it, args...);}
 void solve()
 {
     
