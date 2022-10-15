@@ -33,13 +33,7 @@ typedef vector<bool> vb;
 #define fastio	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define fio	freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); freopen ("error.txt", "w", stderr);
 #define debug(x) cerr << #x << " : "; _print(x); cerr << endl;
-template <class B> void _print(B t) {cerr << t;}
-template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.ff); cerr << ","; _print(p.ss); cerr << "}";}
-template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
-template <class T> void _print(deque <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
-template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
-template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
-template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
+
 void solve()
 {
     
